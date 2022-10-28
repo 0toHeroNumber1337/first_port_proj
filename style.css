@@ -1,0 +1,63 @@
+* {
+    font-size: 16;
+
+    padding: 0;
+}
+
+body {
+
+    margin: 5px;
+}
+
+/* Nav header styling */
+
+nav {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+nav h2 {
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.links li a {
+    padding: 5px;
+    margin: 5px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* About Me */
+
+.about-me {
+    display: flex;
+    margin:5px;
+    padding: 5px;
+}
+
+.text {
+    width: 50%;
+    padding: 5px;
+}
+aside {
+    height: 200px;
+    width: 50%;
+}
+aside img {
+    width: 100%;
+}
