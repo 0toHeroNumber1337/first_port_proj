@@ -1,5 +1,5 @@
 * {
-    font-size: 16;
+    font-size: 16px;
 
     padding: 0;
 }
@@ -32,6 +32,7 @@ nav ul {
     flex-direction: row;
     justify-content: space-between;
 }
+
 .links li a {
     padding: 5px;
     margin: 5px;
@@ -46,18 +47,49 @@ nav ul {
 
 .about-me {
     display: flex;
-    margin:5px;
+    margin: 5px;
     padding: 5px;
+    height: 300px;
+    width: 100%;
+    text-align: center;
 }
 
 .text {
     width: 50%;
     padding: 5px;
 }
+
 aside {
-    height: 200px;
+
     width: 50%;
 }
+
 aside img {
+    width: 90%;
+    height: 90%;
+}
+
+
+/* Projects */
+
+.project-container {
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project1,
+.project2,
+.project3 {
+    height: 250px;
+    width: 33%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.project-header {
+    margin-top: 5px;
+    text-align: center;
 }
