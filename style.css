@@ -1,12 +1,13 @@
 html {
     font-size: 16px;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
 
 body {
-
+    font-size: 16px;
     margin: 0;
     padding: 0;
     background-color: #379DAB;
@@ -23,7 +24,7 @@ nav {
     background-color: #2F595E;
     color: white;
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 nav h2 {
@@ -63,10 +64,12 @@ nav ul {
 .about-me {
     display: flex;
     /* margin: 5px; */
-    padding: 5px;
-    height: 400px;
+    /* padding: 5px; */
+    height: 25.2rem;
     width: 100%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -82,16 +85,19 @@ nav ul {
 }
 
 aside {
+
+
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
+    margin-bottom: .3rem;
 }
 
 aside img {
 
     width: 70%;
-    /* max-height: auto; */
+    max-height: auto;
     border-radius: 10%;
 
 }
@@ -101,25 +107,67 @@ aside img {
 
 .project-container {
     width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     background-color: #C4F1F7;
+
 }
 
+.color {
+    width: auto;
+    padding: 2rem;
+    margin: 3rem;
+
+}
+
+.color h2 {
+    /* margin-bottom: 5rem; */
+    margin: 1rem auto;
+    padding-bottom: 2rem;
+
+}
 
 .project1,
 .project2,
 .project3 {
-    height: 15rem;
+    /* height: 15rem; */
     width: 33%;
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: .5rem;
+
+}
+
+.project1 img,
+.project2 img,
+.project3 img {
+    margin: 0 auto;
+    max-width: 80%;
+    display: none;
+    object-fit: contain;
+
+}
+
+.project1 h3,
+.project2 h3,
+.project3 h3 {
+
+    text-align: center;
+    padding: 1rem;
+    border: 3px solid black;
+}
+
+.project1 h3:hover,
+.project2 h3:hover,
+.project3 h3:hover {
+    cursor: pointer;
 }
 
 .project-header {
-    
+
     text-align: center;
     background-color: #C4F1F7;
 
@@ -127,10 +175,15 @@ aside img {
 }
 
 .color {
-    margin-top: .5rem;
-    background-color: #C4F1F7 ;
+    /* margin-top: .5rem; */
+    background-color: #C4F1F7;
     padding-top: 1.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4.5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*  skills/ Programming Languages section */
@@ -141,6 +194,7 @@ aside img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     margin-bottom: 1rem;
 }
 
@@ -149,7 +203,7 @@ aside img {
 
 /* Footer */
 
-footer{
+footer {
     display: flex;
     background-color: #2F595E;
     height: 5rem;
@@ -165,25 +219,82 @@ footer{
     top: 40em;
 }
 
-@media (min-height: 680px) {
-    
+
+
+
+form {
+    padding: 2rem;
+    border: .1rem solid black;
 }
-
-
-
 
 .form-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 5 auto;
-    padding: 0 auto;
+    margin: 2rem auto;
+    padding: 2rem auto;
+
 }
 
 .form-container h1 {
-text-align: center;
+    text-align: center;
 }
 
 form {
     margin: 0 auto;
+}
+
+
+
+@media (max-width: 800px) {
+
+    .links {
+        padding-left: 0;
+    }
+
+    .about-me {
+        flex-direction: column;
+        padding: 1.2rem;
+        
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .project-container {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .project1,
+    .project2,
+    .project3 {
+
+        width: auto;
+        /* margin: 3rem auto; */
+
+    }
+
+    .project1 img,
+    .project2 img,
+    .project3 img {
+        margin-bottom: 2rem;
+    }
+
+    .text {
+
+        width: 100%;
+        padding: 0rem;
+
+        /* margin: 1rem; */
+    }
+
+    .text p {
+        width: auto;
+        /* padding: 2rem; */
+    }
+
+    aside {
+        display: none;
+    }
 }
