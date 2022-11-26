@@ -9,8 +9,9 @@
  let projectHeader = document.getElementById('projHeader')
  let moreColor = document.getElementsByClassName('color')
 
-
- h11.addEventListener('mousedown', () => {
+let pp = document.getElementsByClassName('pp')
+ h11.addEventListener('click', () => {
+ 
     if ( p1.style.display === 'none'){
         p1.style.display = 'block';
         projectHeader.style.marginBottom = '3rem'
